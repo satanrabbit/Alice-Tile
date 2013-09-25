@@ -1,0 +1,100 @@
+/* alice.tile 样式模块 */
+
+@color-peter-river:#3498db;
+@color-belize-hole:#2980b9;
+@color-wet-asphalt: #34495e; 
+@color-midnight-blue: #2c3e50;
+@color-amethyst: #9b59b6;
+@color-wisteria: #8e44ad;
+@color-alizarin: #e74c3c;
+@color-pomegranate: #c0392b;
+@color-clouds: #ecf0f1;
+@color-silver: #ecf0f1;
+@color-sun-flawer: #f1c40f;
+@color-orange:#f39c12;
+@color-carrot: #e67e22;
+@color-pumpkin: #e67e22;
+@color-turquoise: #1abc9c;
+@color-green-sea: #16a085;
+@color-emerald: #2ecc71;
+@color-nephritis: #27ae60;
+@color-concrete: #95a5a6;
+@color-asbestos: #7f8c8d;
+
+/*****ui-tile styel*******/
+.ui-tile {
+    width: 220px;
+    display:block;
+    position: relative;
+    background-color: @color-pomegranate;
+    margin: 10px 0 10px 10px;
+    color: @color-clouds;
+    font-family:"Microsoft yahei","微软雅黑","幼圆", "黑体","Tahoma","Verdana","Arial","sans-serif";
+
+    .ui-tile-title {
+        position: relative;
+        height: 30px;
+        line-height: 28px; 
+        padding-left: 10px;
+        display:block; 
+        font-size:14px; 
+        font-weight:500; 
+        font-style:oblique;
+        letter-spacing:5px;
+    }
+
+    .ui-tile-bar {
+        height: 30px;
+        line-height: 28px; 
+    }
+
+    .ui-tile-main {
+        position: relative;
+        width: 100%;
+        height: 80px;
+        overflow:hidden;
+
+        .ui-tile-icon {
+            width: 80px;
+            height: 80px;
+            position: absolute;
+        }
+
+        .ui-tile-content {
+            height: 80px;
+            position: absolute;
+            left: 80px;
+        }
+
+        .ui-tile-icon-bus {
+            display:block;
+            width:80px;
+            height:80px;
+            text-indent:-1999px;
+            background-image:url(image/My-Videos_mirror.png );
+        }
+    }
+}
+.ui-tile-main-only{
+    .ui-tile-title{
+        display: none;
+    }
+    .ui-tile-bar{display: none;}
+    .ui-tile-main{
+        height: 110px;
+         .ui-tile-icon {
+            top: 15px;
+        }
+        .ui-tile-content {
+            height: 110px;}
+        }
+}
+.ui-tile-icon-none{
+    .ui-tile-main {
+        .ui-tile-icon{display: none;}
+        .ui-tile-content{
+            left: 0;
+        }
+    }
+}
+/*****sr-tile styel end***/
