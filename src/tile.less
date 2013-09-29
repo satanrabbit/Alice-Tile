@@ -1,3 +1,4 @@
+
 /* alice.tile 样式模块 */
 
 @color-peter-river:#3498db;
@@ -21,6 +22,25 @@
 @color-concrete: #95a5a6;
 @color-asbestos: #7f8c8d;
 
+
+@font-face {
+  font-family: 'fontello';
+  src: url('font/fontello.eot');
+  src: url('font/fontello.eot#iefix') format('embedded-opentype'),
+       url('font/fontello.woff') format('woff'),
+       url('font/fontello.ttf') format('truetype'),
+       url('font/fontello.svg#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.iconfont {
+    font-family: "fontello";
+    font-style: normal;
+    cursor: default;
+    -webkit-font-smoothing: antialiased;
+}
+
 /*****ui-tile styel*******/
 .ui-tile {
     width: 220px;
@@ -29,28 +49,33 @@
     background-color: @color-pomegranate;
     margin: 10px 0 10px 10px;
     color: @color-clouds;
+    font-size: 12px;
     font-family:"Microsoft yahei","微软雅黑","幼圆", "黑体","Tahoma","Verdana","Arial","sans-serif";
 
     .ui-tile-title {
         position: relative;
         height: 30px;
-        line-height: 28px; 
-        padding-left: 10px;
+        line-height: 28px;  
         display:block; 
         font-size:14px; 
         font-weight:500; 
-        font-style:oblique;
         letter-spacing:5px;
+        padding-left: 20px;
     }
 
     .ui-tile-bar {
         height: 30px;
         line-height: 28px; 
+        position: relative;
+        .ui-tile-bar-tip{
+            position: absolute;
+            right: 15px;
+            top: 0;
+        }
     }
 
     .ui-tile-main {
         position: relative;
-        width: 100%;
         height: 80px;
         overflow:hidden;
 
@@ -59,6 +84,12 @@
             height: 80px;
             position: absolute;
         }
+        .ui-tile-icon i{
+            line-height: 1em;
+            font-size: 75px;
+            display: block;
+            text-align: center;
+        }
 
         .ui-tile-content {
             height: 80px;
@@ -66,13 +97,6 @@
             left: 80px;
         }
 
-        .ui-tile-icon-bus {
-            display:block;
-            width:80px;
-            height:80px;
-            text-indent:-1999px;
-            background-image:url(image/My-Videos_mirror.png );
-        }
     }
 }
 .ui-tile-main-only{
@@ -96,5 +120,52 @@
             left: 0;
         }
     }
+}
+.ui-tile-title-left{
+    overflow: hidden;
+    .ui-tile-title{
+        height: 80px;
+        width: 25px;
+        margin: 0 ;
+        padding:15px 0 0 0 ;
+        position: absolute;
+        line-height: 20px;
+        left:10px;
+    }
+    .ui-tile-main{
+        margin-left: 30px;
+        height: 110px;
+        .ui-tile-icon {
+            top: 15px;
+        }
+    }
+    .ui-tile-bar{
+        display: none;
+    }
+}
+.ui-tile-thame(@color){
+    background-color: @color;
+}
+.ui-tile-color-midnight-blue ,.ui-tile-main-midnight-blue{
+   .ui-tile-thame(@color-midnight-blue) ;
+}
+.ui-tile-color-belize-hole,.ui-tile-main-belize-hole {
+   .ui-tile-thame(@color-belize-hole) ;
+}
+.ui-tile-color-wet-asphalt ,.ui-tile-main-wet-asphalt {
+   .ui-tile-thame(@color-wet-asphalt) ;
+}
+.ui-tile-color-amethyst,.ui-tile-main-amethyst {
+   .ui-tile-thame(@color-amethyst) ;
+}
+.ui-tile-color-wisteria,.ui-tile-main-wisteria {
+   .ui-tile-thame(@color-wisteria) ;
+}
+.ui-tile-color-alizarin ,.ui-tile-main-alizarin {
+   .ui-tile-thame(@color-alizarin);
+}
+
+.ui-tile-color-clouds ,.ui-tile-main-clouds {
+   .ui-tile-thame(@color-clouds);
 }
 /*****sr-tile styel end***/

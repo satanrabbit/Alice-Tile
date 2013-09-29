@@ -1,11 +1,11 @@
 {
   "name": "tile",
-  "description": "\"Alice extend ui style -- tile for flat style !\"",
+  "description": "Alice extend ui style -- tile for flat style !",
   "version": "1.0.0",
   "homepage": "https://github.com/SatanRabbit/tile",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SatanRabbit/tile/git"
+    "url": "https://github.com/SatanRabbit/tile"
   },
   "bugs": {
     "url": "https://github.com/SatanRabbit/tile/issues"
