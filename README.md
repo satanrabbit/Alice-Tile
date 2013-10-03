@@ -14,6 +14,7 @@
 
 ````html
 <div class="ui-tile">
+    <a href="#">
 	<div class="ui-tile-title">通知公告</div>
     <div class="ui-tile-main">
         <div class="ui-tile-icon "> <i class="iconfont" title="银行卡">&#xe809;</i></div>
@@ -26,6 +27,7 @@
     <div class="ui-tile-bar">
     &emsp;设施、设备故障报修与维修服务
     <div class="ui-tile-bar-tip">15</div>
+    </a>
 </div>
 ````
 

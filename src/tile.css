@@ -23,6 +23,15 @@
   font-size: 12px;
   font-family: "Microsoft yahei", "微软雅黑", "幼圆", "黑体", "Tahoma", "Verdana", "Arial", "sans-serif";
 }
+.ui-tile a {
+  color: #ecf0f1;
+}
+.ui-tile a:link {
+  color: #ecf0f1;
+}
+.ui-tile a:hover {
+  color: #ecf0f1;
+}
 .ui-tile .ui-tile-title {
   position: relative;
   height: 30px;
